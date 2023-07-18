@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form method="post">
+        <input type="int" name="num1" />
+        <input type="int" name="num2" />
+        <button type="submit" asp-page-handler="OnPost">Enviar</button>
+    </form>
+    <p>A soma dos numeros é: @Model.Result</p>
+</div>

@@ -8,37 +8,37 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = _02
 build_property.RootNamespace = _02
-build_property.ProjectDir = /home/emanuel/Sequencial/02/
+build_property.ProjectDir = /home/emanuel/Sequencial/csharp-mvc-sequencial/02/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/emanuel/Sequencial/02
+build_property.MSBuildProjectDirectory = /home/emanuel/Sequencial/csharp-mvc-sequencial/02
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/emanuel/Sequencial/02/Pages/Error.cshtml]
+[/home/emanuel/Sequencial/csharp-mvc-sequencial/02/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/emanuel/Sequencial/02/Pages/Index.cshtml]
+[/home/emanuel/Sequencial/csharp-mvc-sequencial/02/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/emanuel/Sequencial/02/Pages/Privacy.cshtml]
+[/home/emanuel/Sequencial/csharp-mvc-sequencial/02/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/emanuel/Sequencial/02/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[/home/emanuel/Sequencial/csharp-mvc-sequencial/02/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/emanuel/Sequencial/02/Pages/_ViewImports.cshtml]
+[/home/emanuel/Sequencial/csharp-mvc-sequencial/02/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/emanuel/Sequencial/02/Pages/_ViewStart.cshtml]
+[/home/emanuel/Sequencial/csharp-mvc-sequencial/02/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/emanuel/Sequencial/02/Pages/Shared/_Layout.cshtml]
+[/home/emanuel/Sequencial/csharp-mvc-sequencial/02/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-cmhbpcwnwq
