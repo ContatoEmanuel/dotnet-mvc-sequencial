@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/emanuel/Sequencial/csharp-mvc-sequencial/04/04.csproj",
+      "projectUniqueName": "/home/emanuel/Sequencial/dotnet-mvc-sequencial/04/04.csproj",
       "projectName": "04",
-      "projectPath": "/home/emanuel/Sequencial/csharp-mvc-sequencial/04/04.csproj",
+      "projectPath": "/home/emanuel/Sequencial/dotnet-mvc-sequencial/04/04.csproj",
       "packagesPath": "/home/emanuel/.nuget/packages/",
-      "outputPath": "/home/emanuel/Sequencial/csharp-mvc-sequencial/04/obj/",
+      "outputPath": "/home/emanuel/Sequencial/dotnet-mvc-sequencial/04/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/emanuel/.nuget/NuGet/NuGet.Config"
