@@ -10,12 +10,13 @@ on:
     branches: [ "dev" ]
 
 jobs:
-  build:
+  build-and-deploy:
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v3
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
@@ -26,3 +27,13 @@ jobs:
       run: dotnet build ./04/04.csproj --no-restore
     - name: Test
       run: dotnet test ./04/04.csproj --no-build --verbosity normal
+    - name: Publish to GitHub Pages
+      run: dotnet publish -c Release -o ./publish
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./publish
