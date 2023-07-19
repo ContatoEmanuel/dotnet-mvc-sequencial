@@ -27,8 +27,8 @@ jobs:
       run: dotnet build ./04/04.csproj --no-restore
     - name: Test
       run: dotnet test ./04/04.csproj --no-build --verbosity normal
-    - name: Publish to GitHub Pages ./04/04.csproj
-      run: dotnet publish -c Release -o ./publish
+    - name: Publish to GitHub Pages
+      run: dotnet publish -c Release -o ./publish ./04/04.csproj
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
