@@ -28,10 +28,11 @@ jobs:
     - name: Publish to GitHub Pages
       run: |
         dotnet tool install --global dotnet-ef
-        dotnet ef migrations script --idempotent --output ./deploy/db.sql
+        dotnet ef migrations script --idempotent --output ./deploy/db.sql --project ./04/04.csproj
         echo "dotnet-ef migrations script completed successfully."
       env:
         DOTNET_ROOT: ${{ github.workspace }}/deploy
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
