@@ -29,7 +29,7 @@ jobs:
       run: dotnet test ./04/04.csproj --no-build --verbosity normal
     - name: Publish to GitHub Pages
       run: |
-        dotnet publish -c Release -o ./publish ./04/Pages/04.csproj
+        dotnet publish -c Release -o ./publish ./04/04.csproj
         mkdir ./docs/
         cp -r ./publish/* ./docs/
       env:
