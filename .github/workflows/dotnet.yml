@@ -1,7 +1,7 @@
-# This workflow will build a .NET project
+# This workflow will build a .NET project and deploy to GitHub Pages
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
-name: .NET
+name: .NET and GitHub Pages
 
 on:
   push:
@@ -11,12 +11,10 @@ on:
 
 jobs:
   build-and-deploy:
-
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+    - uses: actions/checkout@v3
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
@@ -29,14 +27,13 @@ jobs:
       run: dotnet test ./04/04.csproj --no-build --verbosity normal
     - name: Publish to GitHub Pages
       run: |
-        dotnet publish -c Release -o ./publish ./04/04.csproj
-        mkdir ./docs/
-        cp -r ./publish/* ./docs/
+        dotnet tool install --global dotnet-ef
+        dotnet ef migrations script --idempotent --output ./deploy/db.sql
+        echo "dotnet-ef migrations script completed successfully."
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+        DOTNET_ROOT: ${{ github.workspace }}/deploy
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./publish
+        publish_dir: ./04/04.csproj
